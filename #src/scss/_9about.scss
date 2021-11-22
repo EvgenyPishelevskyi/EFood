@@ -24,16 +24,14 @@
       padding: 0px 20px;
    }
 
-
    .about__info {
+      margin-right: 105px;
       display: flex;
       flex-direction: column;
-      margin-right: 105px;
 
       @media (max-width: 865px) {
          margin-right: 0px;
       }
-
 
       ._info__logo {
          margin-bottom: 44px;
@@ -67,9 +65,7 @@
             background: rgba(238, 238, 239, 1);
             border-radius: 50px;
             margin-right: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include center;
             text-align: center;
 
             a {
@@ -137,7 +133,6 @@
                }
             }
          }
-
       }
    }
 }

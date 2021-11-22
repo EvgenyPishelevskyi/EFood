@@ -1,7 +1,7 @@
 .reviews {
    padding: 0px 0px 63px 0px;
 
-   h2 {
+   .reviews__title {
       padding: 0px 0px 22px 41px;
       @include adaptive-font (36, 16);
       font-weight: 500;
@@ -22,7 +22,7 @@
          padding: 0px 10px;
       }
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          flex-direction: column;
          text-align: center;
       }
@@ -36,7 +36,7 @@
       margin-right: 30px;
    }
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       margin: 0px 0px 0px 0px;
    }
 }
@@ -44,11 +44,11 @@
 .reviews__info {
    padding: 36px 0px 0px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 0px 0px;
    }
 
-   p {
+   .reviews-info__descr {
       padding: 0px 10px 57px 10px;
       margin: 0 auto;
       @include adaptive-font (20, 16);
@@ -57,47 +57,19 @@
       position: relative;
       color: rgba(54, 56, 83);
 
-
       @media (max-width: 1200px) {
          width: 100%;
          padding: 0px 10px 30px 10px;
       }
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          padding: 30px 10px;
          width: 100%;
          display: block;
          line-height: calc(36/ 20);
       }
-
-      // &:before {
-      //    content: '“';
-      //    position: absolute;
-      //    font-family: Nunito;
-      //    @include adaptive-font (80, 16);
-      //    line-height: 109px;
-      //    letter-spacing: 0.5px;
-      //    left: -44px;
-      //    top: -17px;
-      //    // color: rgba(221, 221, 221, 1);
-      // }
-
-      // &:after {
-      //    content: '“';
-      //    position: absolute;
-      //    font-family: Nunito;
-      //    @include adaptive-font (80, 16);
-      //    line-height: 109px;
-      //    letter-spacing: 0.5px;
-      //    right: -30px;
-      //    bottom: -17px;
-      //    // color: rgba(221, 221, 221, 1);
-
-      // }
    }
 }
-
-
 
 ._info__user {
    padding: 0px 0px 20px 30px;

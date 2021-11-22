@@ -17,18 +17,18 @@
       border-radius: 16px;
       color: rgba(255, 255, 255, 1);
 
-      @media (max-width: $md2 + px) {
+      @media (max-width: ($md2 + px)) {
          padding: 0px 0px 0px 0px;
       }
 
-      h2 {
+      .subcribe__title {
          padding: 59px 0px 17px 0px;
          @include adaptive-font (40, 16);
          line-height: calc(47 / 40);
          font-weight: 500;
       }
 
-      p {
+      .subcribe__descr {
          padding: 0px 0px 39px 0px;
          @include adaptive-font (16, 16);
          font-size: 16px;
@@ -38,10 +38,9 @@
       form {
          position: relative;
 
-         @media (max-width: $md2 + px) {
+         @media (max-width: ($md2 + px)) {
             padding: 0px 0px 40px 0px;
          }
-
 
          input {
             padding: 29px 50px;
@@ -50,23 +49,18 @@
             box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
             border-radius: 70px;
 
-
             @media (max-width: 1024px) {
                margin: 0px 0px 30px 0px;
             }
 
-            @media (max-width: $md2 + px) {
+            @media (max-width: ($md2 + px)) {
                width: 70%;
                display: block;
                margin: 0px auto 30px auto;
                text-align: left;
             }
-
-            @media (max-width: $md3 + px) {
+            @media (max-width: ($md3 + px)) {
                width: 85%;
-               display: block;
-               margin: 0px auto 30px auto;
-               text-align: left;
             }
 
             &::placeholder {
@@ -74,18 +68,17 @@
                @include adaptive-font (18, 16);
                line-height: calc(30 / 18);
 
-               @media (max-width: $md2 + px) {
+               @media (max-width: ($md2 + px)) {
                   text-align: left;
                }
             }
-
          }
 
          a {
+            padding: 15px 47px 15px 46px;
             position: absolute;
             right: 11px;
             bottom: 9px;
-            padding: 15px 47px 15px 46px;
             color: #fff;
             background-color: rgba(255, 122, 80, 1);
             border-radius: 70px;
@@ -110,9 +103,7 @@
                position: absolute;
                content: '';
                background-image: url('../img/Vector.png');
-               background-repeat: no-repeat;
-               background-position: center center;
-               background-size: cover;
+               @include background-image;
                left: 25px;
                top: 24px;
                width: 13px;

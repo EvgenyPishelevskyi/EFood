@@ -1,18 +1,16 @@
 .delivery {
    padding: 0px 0px 128px 0px;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       padding: 0px 0px 60px 0px;
    }
 }
 
-
 .delivery__container {
-   display: flex;
    padding: 0 18px;
+   display: flex;
 
-
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       flex-direction: column-reverse;
    }
 }
@@ -20,33 +18,32 @@
 .delivery__pic {
    flex: 0 1 60%;
 
-   @media (max-width: $md2 +px) {
+   @media (max-width: ($md2 +px)) {
       text-align: center;
    }
 
    img {
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          text-align: center;
       }
    }
-
 }
 
 .delivery__info {
    flex: 0 1 41%;
    padding: 110px 0px 0px 0px;
 
-   @media (max-width: $md2 +px) {
-      text-align: center;
+   @media (max-width: ($md2 +px)) {
       padding: 50px 0px 0px 0px;
+      text-align: center;
    }
 
-   h2 {
+   .delivery-info__title {
       padding: 0px 0px 30px 0px;
       max-width: 72%;
       @include adaptive-font (36, 16);
-      font-weight: 500;
       line-height: calc(50 / 36);
+      font-weight: 500;
 
       @media (max-width: 1200px) {
          max-width: 100%;
@@ -57,7 +54,7 @@
       }
    }
 
-   p {
+   .delivery-info__descr {
       padding: 0px 0px 29px 0px;
       max-width: 87%;
       @include adaptive-font (20, 16);
@@ -72,11 +69,11 @@
       margin-bottom: 69px;
    }
 
-   div {
-      display: flex;
+   .delivery-info__icon {
       margin-bottom: 25px;
+      display: flex;
 
-      @media (max-width: $md2 +px) {
+      @media (max-width: ($md2 +px)) {
          justify-content: center;
          align-items: center;
       }
@@ -84,7 +81,6 @@
       span {
          @include adaptive-font (24, 16);
          line-height: calc(30 / 24);
-
       }
    }
 
@@ -95,9 +91,3 @@
       border-radius: 30px 30px 1px 30px;
    }
 }
-
-._icon-timer-1 {}
-
-._icon-Delivery-icon {}
-
-._icon-Resturent {}
