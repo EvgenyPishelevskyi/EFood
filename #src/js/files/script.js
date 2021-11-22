@@ -145,8 +145,6 @@ $(document).ready(function(){
 /* Slider1 */
 
 
-
-
 /* Slider2 */
 	
 $('.slider2').slick({
@@ -164,7 +162,6 @@ $('.slider2').slick({
 	initialSlide:0,
 	focusOnSelect: false,
 	});
-
 
 
 /* Slider2 */

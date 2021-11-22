@@ -2,33 +2,26 @@
 @font-face {
   font-family: "Rubik";
   font-display: swap;
-  src: url("../fonts/Light.woff2") format("woff2"), url("../fonts/Light.woff") format("woff");
+  src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
   font-display: swap;
-  src: url("../fonts/Regular.woff2") format("woff2"), url("../fonts/Regular.woff") format("woff");
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
   font-display: swap;
-  src: url("../fonts/Medium.woff2") format("woff2"), url("../fonts/Medium.woff") format("woff");
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/normal.woff2") format("woff2"), url("../fonts/normal.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Funito";
   font-display: swap;
   src: url("../fonts/normal.woff2") format("woff2"), url("../fonts/normal.woff") format("woff");
   font-weight: 400;
